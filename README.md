@@ -8,7 +8,7 @@ Transforming data into insights, and insights into impactful decisions. Explore 
 
 Dive into my portfolio of dynamic dashboards, analytical solutions, and innovative projects.  
 
-🌟 **[Check Out My Work Here!](https://github.com/AkshayVarma99)**  
+🌟 **[Check Out My Work Here!](https://akshayvarma99.github.io/Akshay-s-Portfolio/)**  
 
 Discover how I turn raw data into actionable intelligence with tools like **Power BI, Python, SQL, and Tableau**.
 
