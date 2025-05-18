@@ -1,0 +1,332 @@
+/* Modern Skill Bars */
+.skill-item {
+    margin-bottom: 30px;
+}
+
+.skill-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.skill-info h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.progress {
+    height: 10px;
+    background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+    border-radius: 10px;
+    overflow: visible;
+}
+
+.progress-bar {
+    background-color: var(--accent-color);
+    border-radius: 10px;
+    position: relative;
+}
+
+.progress-bar-striped {
+    background-image: linear-gradient(45deg, 
+                          rgba(255, 255, 255, .15) 25%, 
+                          transparent 25%, 
+                          transparent 50%, 
+                          rgba(255, 255, 255, .15) 50%, 
+                          rgba(255, 255, 255, .15) 75%, 
+                          transparent 75%, 
+                          transparent);
+    background-size: 1rem 1rem;
+}
+
+.progress-bar-animated {
+    animation: progress-bar-stripes 1s linear infinite;
+}
+
+@keyframes progress-bar-stripes {
+    0% {
+        background-position: 1rem 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+/* Modern Portfolio Section */
+#portfolio-filters {
+    padding: 0;
+    margin: 0 auto 20px auto;
+    list-style: none;
+    text-align: center;
+}
+
+#portfolio-filters li {
+    cursor: pointer;
+    display: inline-block;
+    padding: 8px 15px 10px 15px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+    text-transform: uppercase;
+    color: var(--default-color);
+    margin-bottom: 5px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 3px;
+}
+
+#portfolio-filters li:hover, 
+#portfolio-filters li.filter-active {
+    color: var(--contrast-color);
+    background: var(--accent-color);
+}
+
+.portfolio-container {
+    animation: portfolio-animation 0.8s;
+}
+
+.portfolio-item {
+    margin-bottom: 30px;
+}
+
+.portfolio-wrap {
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-wrap::before {
+    content: "";
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transition: all ease-in-out 0.3s;
+    z-index: 2;
+    opacity: 0;
+}
+
+.portfolio-wrap img {
+    transition: all 0.5s ease;
+}
+
+.portfolio-wrap:hover img {
+    transform: scale(1.1);
+}
+
+.portfolio-wrap:hover::before {
+    opacity: 1;
+}
+
+.portfolio-wrap .portfolio-info {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    transition: all ease-in-out 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.portfolio-wrap:hover .portfolio-info {
+    opacity: 1;
+}
+
+.portfolio-wrap .portfolio-info h4 {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.portfolio-wrap .portfolio-info p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0 0 10px 0;
+}
+
+.portfolio-wrap .portfolio-links {
+    text-align: center;
+}
+
+.portfolio-wrap .portfolio-links a {
+    color: #fff;
+    margin: 0 5px;
+    font-size: 28px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.portfolio-wrap .portfolio-links a:hover {
+    color: var(--accent-color);
+}
+
+@keyframes portfolio-animation {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Enhanced Contact Section */
+.contact-info {
+    padding: 30px;
+    background: var(--surface-color);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+}
+
+.contact-info .info-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.contact-info .info-item:last-child {
+    margin-bottom: 0;
+}
+
+.contact-info .info-item i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: color-mix(in srgb, var(--accent-color), transparent 90%);
+    color: var(--accent-color);
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+.contact-info h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.contact-info p {
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+.contact-info .social-links {
+    margin-top: 30px;
+    display: flex;
+}
+
+.contact-info .social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--accent-color);
+    color: var(--contrast-color);
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+.contact-info .social-links a:hover {
+    background: color-mix(in srgb, var(--accent-color), transparent 20%);
+    transform: translateY(-3px);
+}
+
+.contact-form {
+    padding: 30px;
+    background: var(--surface-color);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+}
+
+.contact-form .form-control {
+    padding: 12px 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    border: 1px solid color-mix(in srgb, var(--default-color), transparent 80%);
+    transition: 0.3s;
+}
+
+.contact-form .form-control:focus {
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 0.25rem color-mix(in srgb, var(--accent-color), transparent 75%);
+}
+
+/* Contact Button Styled Like GitHub Button */
+.contact-form .btn {
+    font-family: "Segoe UI", sans-serif;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: -0.02em;
+    color: #444638;
+    font-size: 20px;
+    position: relative;
+    border-radius: 80em;
+    background-color: #ffbd39;
+    border: 0.125rem solid #ffbd39;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease-in-out;
+    cursor: pointer;
+    overflow: hidden;
+    padding: 10px 20px;
+    display: inline-block;
+  }
+  
+  .contact-form .btn:hover {
+    background-color: #fcc556;
+    border-color: #fcc556;
+    transform: scale(1.07);
+    color: #1f1e1d;
+  }
+  
+  .contact-form .btn:after {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(-100%) rotate(10deg);
+    transform-origin: top left;
+    transition: transform 0.2s ease-in-out;
+    z-index: -1;
+    border-radius: 80em;
+    background-color: #fcc556;
+  }
+  
+  .contact-form .btn:hover:after {
+    transform: translate(0);
+    z-index: 0;
+  }
+  
+  .contact-form .btn > * {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .contact-form .btn__inner {
+    color: #1f1e1d;
+  }
+  
+  .contact-form .btn:hover .btn__inner {
+    color: #1f1e1d;
+  }
+  

@@ -29,6 +29,7 @@
 
     <!-- Main CSS File -->
     <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/custom.css" rel="stylesheet">
 
     <!-- =======================================================
     * Template Name: Laura
@@ -74,15 +75,23 @@
 
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
-
+        <div class="hero-overlay"></div>
         <img src="assets/img/Background Image.png" alt="" data-aos="fade-in">
-
+    
         <div class="container text-center" data-aos="fade-up" data-aos-delay="100">
-            <h2>Akshay Varma</h2>
-            <p>Data Analyst & Power BI Developer | Expertise in Data Analysis, Machine Learning & Business Intelligence</p>
+            <h2 class="animate__animated animate__fadeIn">Akshay Varma</h2>
+            <div class="typed-container">
+                <span id="typed-strings">
+                    <span>Driving Business Impact through Data Analytics, Power BI, SQL, Python, and Advanced Machine Learning</span>
+                </span>
+                <span id="typed" class="typed"></span>
+            </div>
+            <div class="hero-buttons mt-4">
+                <a href="#portfolio" class="btn btn-primary me-2">View My Work</a>
+                <a href="#contact" class="btn btn-outline">Contact Me</a>
+            </div>
             <a href="#about" class="btn-scroll" title="Scroll Down"><i class="bi bi-chevron-down"></i></a>
         </div>
-
     </section><!-- /Hero Section -->
 
     <!-- About Section -->
@@ -104,16 +113,14 @@
                 </div>
                 -->
                 <div class="col-lg-8 content">
-                    <h2>Business Intelligence & Data Analytics Specialist</h2>
+                    <h2>Data Analyst & Visualization Expert</h2>
                     <p class="fst-italic py-3">
-                        I am a skilled professional specializing in Data Science, Analytics, and Power BI, with 3 years of experience at KPIT Ltd. I excel in end-to-end data workflows, including data collection, preparation, modeling, and visualization, leveraging tools like SQL and Excel to enable data-driven business decisions.
-
-I have a proven track record in migrating reporting systems to Power BI, creating optimized data models, and delivering actionable insights through advanced DAX expressions and dynamic dashboards.
-
-With a Master’s in Data Science and Analytics, I am proficient in Python, SQL, machine learning, and statistical analysis. I am passionate about solving business challenges and driving efficiency through innovative, data-driven solutions.
-
-
-                    </p>
+                        I am a data-driven professional with expertise in Data Science, Analytics, and Business Intelligence, backed by over three years of industry experience. I’ve worked with companies like KPIT Technologies and Orcawise, leading impactful data projects and enabling strategic decision-making through tools such as Power BI, SQL, and Python.
+                        <br><br>
+                        At KPIT, I streamlined reporting systems, developed advanced dashboards, and engineered data transformation pipelines that reduced manual effort and enhanced operational efficiency. At Orcawise, I developed scalable web scraping pipelines, GDPR-compliant databases, and CI/CD-enabled ETL workflows to support AI compliance auditing and automation initiatives.
+                        <br><br>
+                        With a Master’s degree in Data Science and Analytics, I bring deep expertise in statistical modeling, machine learning, and visualization. I’m passionate about building intelligent, efficient solutions that transform raw data into actionable insights and drive measurable business outcomes.
+                      </p>
                     <div class="row">
                         <div class="col-lg-6">
                             <ul>
@@ -187,39 +194,66 @@ With a Master’s in Data Science and Analytics, I am proficient in Python, SQL,
 
     <!-- Experience Section -->
     <section id="experience" class="resume section">
-
         <div class="container">
-
             <div class="row justify-content-center">
-
                 <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
                     <h3 class="resume-title">Professional Experience</h3>
-                    <div class="resume-item">
-                        <h4>BI & Data Specialist</h4>
-                        <h5>2021 - 2023</h5>
-                        <!-- <p><em>Silk Route Advisors, Bangalore</em></p> -->
-                        <ul>
-                            <li>Led the migration of complex reporting systems to Power BI, optimizing data models and visualizations to improve business intelligence capabilities and decision-making.
-                            </li>
-                            <li>Developed and implemented advanced DAX expressions to enhance the performance and functionality of Power BI dashboards, delivering actionable insights to stakeholders.
-                            </li>
-                            <li>Designed and maintained scalable data models, ensuring data accuracy, integrity, and ease of use for end-users across various departments.
-                            </li>
-                            <li>Collaborated with cross-functional teams, including data analysts and business stakeholders, to define reporting requirements and ensure timely project delivery.
-                            </li>
-                            <li>Utilized SQL and Excel to extract, clean, and manipulate data for integration into Power BI, enhancing reporting and analytics efficiency.
-                            </li>
-                            <li>Continuously improved reporting processes and developed custom visualizations, ensuring high-quality and user-friendly dashboards aligned with business needs.
-                            </li>
-                        </ul>
-                    </div>
 
+
+                    <div class="resume-item">
+                        <h4>Data Analyst</h4>
+                        <div class="resume-meta">
+                          <em>Orcawise, Dublin, Ireland (Remote)</em>
+                          <span>Jan 2025 – Present</span>
+                        </div>
+                        <ul>
+                            <li>Engineered web scraping pipelines using Python and Selenium to extract structured data from dynamic websites, addressing rate limiting and JavaScript rendering challenges.</li>
+                            <li>Developed ETL workflows for enterprise datasets (SQL/Python), optimizing data storage and transformation for AI compliance audits.</li>
+                            <li>Designed GDPR-compliant MySQL databases with anonymization techniques for handling scraped data securely.</li>
+                            <li>Built CI/CD pipelines using GitLab CI to automate deployment of compliance tools, increasing development efficiency.</li>
+                            <li>Collaborated with governance teams to align data collection processes with EU AI Act standards.</li>
+                        </ul>
+                      </div> 
+                    
+                      <div class="resume-item">
+                        <h4>Data Analyst</h4>
+                        <div class="resume-meta">
+                          <em>KPIT, Pune, India </em>
+                          <span>Dec 2021 – Aug 2023</span>
+                        </div>
+                        <ul>
+                            <li>Migrated 50+ legacy OBIEE reports to Power BI, reducing licensing costs by $12K/year and analysis time by 25%.</li>
+                            <li>Optimized 30+ SQL queries and stored procedures integrating manufacturing/sales data (MySQL), reducing integration time by 20%.</li>
+                            <li>Cleaned 500+ inconsistent product codes using Power Query, improving dataset accuracy to 98%.</li>
+                            <li>Automated dashboard refreshes using gateway configurations for real-time business insights.</li>
+                            <li>Standardized 10,000+ records with Python (Pandas), achieving 99.5% data integrity.</li>
+                            <li>Enhanced 15 dashboards through DAX optimization and SQL indexing, improving load times by 30%.</li>
+                            <li>Reduced manual validation by 10 hours/month with automated quality checks.</li>
+                            <li>Created 50+ production reports via SQL, helping reduce inventory waste by 18% through predictive analytics.</li>
+                            <li>Wrote scripts to flag data-entry errors, cutting validation time by 12 hours/month.</li>
+                            <li>Resolved 200+ timestamp mismatches, boosting report accuracy by 20%.</li>
+                        </ul>
+                      </div>  
+                    
+                    <div class="resume-item">
+                        <h4>Software Trainee</h4>
+                        <div class="resume-meta">
+                          <em>KPIT, Pune, India</em>
+                          <span>May 2021 – Dec 2021</span>
+                        </div>
+                        <ul>
+                            <li>Spearheaded development of TCP/IP modules in Classic AUTOSAR stack using C/Embedded C on Windows OS.</li>
+                            <li>Established end-to-end requirements traceability using IBM DOORS for 100% specification alignment.</li>
+                            <li>Enforced MISRA C:2012 compliance via Polyspace and Katapult QAC, eliminating critical safety violations.</li>
+                            <li>Improved code coverage to over 95% by designing and executing thorough unit and functional tests.</li>
+                        </ul>
+                      </div>
+    
                 </div>
             </div>
-
         </div>
-
     </section><!-- /Experience Section -->
+    
 
     <!-- Certification Section -->
     <section id="certification" class="resume section">
@@ -229,6 +263,18 @@ With a Master’s in Data Science and Analytics, I am proficient in Python, SQL,
                     <h3 class="resume-title">Certifications</h3>
                     <div class="resume-item">
                         <ul>
+                            <li>
+                                <strong><a href="https://learn.microsoft.com/en-in/users/akshayvarma-3300/credentials/61c26a478ea343a4/"
+                                           target="_blank">Microsoft Certified: Power BI Data Analyst Associate</a></strong> – Microsoft (2025)
+                                <p>Validated expertise in transforming data into actionable insights using Power BI, including data modeling, DAX, 
+                                    and advanced visualizations for business intelligence reporting.</p>
+                            </li>
+                            <li>
+                                <strong><a href="https://learn.microsoft.com/en-us/users/akshayvarma-3300/credentials/b1062f88b6031cf2/"
+                                           target="_blank">Microsoft Certified: Azure Data Fundamentals</a></strong> – Microsoft (2025)
+                                <p>Demonstrated foundational knowledge of core data concepts, Azure data services, and fundamental cloud data workloads, 
+                                    enabling informed decisions on data-related solutions in the Azure ecosystem.</p>
+                            </li>
                             <li>
                                 <strong><a href="https://www.linkedin.com/learning/certificates/da01ab551d1f03402bef8cced6d1ca156a0e9a5428c987e52ef7be93c6002a18/"
                                            target="_blank">Career Essentials in Data Analysis</a></strong> – Microsoft & LinkedIn (2024)
@@ -241,20 +287,6 @@ With a Master’s in Data Science and Analytics, I am proficient in Python, SQL,
                                 <p>Gained expertise in GitHub Actions Automation, leveraging GitHub Copilot for enhanced coding productivity, 
                                     and applying GitHub features on real-world projects.</p>
                             </li>
-                            <li>
-                                <strong><a href="https://www.mygreatlearning.com/certificate/RDWFTVYA"
-                                           target="_blank">Python for Data Science</a></strong> – GreatLearning (2020)
-                                <p>Acquired practical Python programming skills for data science, including data manipulation, statistical analysis, 
-                                    and visualization, with a focus on real-world data applications.</p>
-                            </li>
-                            <li>
-                                <strong><a
-                                        href="https://www.mygreatlearning.com/certificate/PJTLLBHT"
-                                        target="_blank">Cloud Foundations</a></strong> – GreatLearning (2020)
-                                <p>Learned the fundamentals of cloud computing, including service models, deployment strategies, 
-                                    and cloud security, to build scalable and efficient cloud-based data solutions.
-                                </p>
-                            </li>
                         </ul>
                     </div>
                 </div>
@@ -263,210 +295,180 @@ With a Master’s in Data Science and Analytics, I am proficient in Python, SQL,
     </section><!-- /Certification Section -->
 
     <!-- Skills Section -->
-    <section id="skills" class="skills section">
-
-        <!-- Section Title -->
+    <<section id="skills" class="skills section">
         <div class="container section-title" data-aos="fade-up">
             <span class="description-title">Skills</span>
             <h2>Skills</h2>
             <p>Skilled in a wide range of tools and technologies, I leverage Python, SQL, Excel, and 
                 Power BI to tackle complex data challenges. With a strong focus on data cleaning and visualization, 
                 I transform raw data into actionable insights that inform business strategies and decision-making.</p>
-        </div><!-- End Section Title -->
-        <div class="row">
-            <div class="col-md-6 animate-box">
-                <div class="progress-wrap ftco-animate">
-                    <h3>Python</h3>
-                    <div class="progress">
-                        <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80"
-                             class="progress-bar color-1" role="progressbar" style="width:80%">
+        </div>
+    
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <h4>Python</h4>
                             <span>80%</span>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 animate-box">
-                <div class="progress-wrap ftco-animate">
-                    <h3>SQL</h3>
-                    <div class="progress">
-                        <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="90"
-                             class="progress-bar color-2" role="progressbar" style="width:90%">
-                            <span>90%</span>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-md-6 animate-box">
-                <div class="progress-wrap ftco-animate">
-                    <h3>Excel</h3>
-                    <div class="progress">
-                        <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="85"
-                             class="progress-bar color-3" role="progressbar" style="width:85%">
+    
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <h4>SQL</h4>
+                            <span>90%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+    
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <h4>Excel</h4>
                             <span>85%</span>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 animate-box">
-                <div class="progress-wrap ftco-animate">
-                    <h3>Power BI</h3>
-                    <div class="progress">
-                        <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="90"
-                             class="progress-bar color-4" role="progressbar" style="width:90%">
-                            <span>90%</span>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-6 animate-box">
-                <div class="progress-wrap ftco-animate">
-                    <h3>Data Cleaning</h3>
-                    <div class="progress">
-                        <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="95"
-                             class="progress-bar color-3" role="progressbar" style="width:95%">
+    
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <h4>Power BI</h4>
+                            <span>90%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+    
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <h4>Data Cleaning</h4>
                             <span>95%</span>
                         </div>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+    
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <h4>Data Visualization</h4>
+                            <span>90%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div><section id="portfolio" class="portfolio section">
+    <div class="container">
+        <div class="container section-title" data-aos="fade-up">
+            <span class="description-title">Portfolio</span>
+            <h2>Portfolio</h2>
+            <p>Here are Data Analytics projects utilizing Python, SQL, Excel, and Power BI.</p>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+            <div class="col-lg-4 col-md-6 portfolio-item filter-powerbi">
+                <div class="portfolio-wrap">
+                    <img src="assets/img/Sales Dashboard.png" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>Sales Performance Dashboard</h4>
+                        <p>Power BI</p>
+                        <div class="portfolio-links">
+                            <a href="assets/img/Sales Dashboard.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Sales Performance Dashboard"><i class="bi bi-plus"></i></a>
+                            <a href="https://github.com/AkshayVarma99/PowerBI-Sales-Dashboard" title="More Details"><i class="bi bi-link"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 animate-box">
-                <div class="progress-wrap ftco-animate">
-                    <h3>Data Visualization</h3>
-                    <div class="progress">
-                        <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="90"
-                             class="progress-bar color-4" role="progressbar" style="width:90%">
-                            <span>90%</span>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-powerbi">
+                <div class="portfolio-wrap">
+                    <img src="assets/img/ICC T20 World Cup Image.png" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>ICC T20 World Cup 2022</h4>
+                        <p>Power BI & Excel</p>
+                        <div class="portfolio-links">
+                            <a href="assets/img/ICC T20 World Cup Image.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="ICC T20 World Cup 2022 - Player Performance Dashboard"><i class="bi bi-plus"></i></a>
+                            <a href="https://github.com/AkshayVarma99/T20-Cricket-World-Cup-2022-Data-Analysis" title="More Details"><i class="bi bi-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-python">
+                <div class="portfolio-wrap">
+                    <img src="assets/img/WhatApp Chat Analysiss.png" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>WhatsApp Chat Analysis</h4>
+                        <p>Streamlit Application</p>
+                        <div class="portfolio-links">
+                            <a href="assets/img/WhatApp Chat Analysiss.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="WhatsApp Chat Analysis"><i class="bi bi-plus"></i></a>
+                            <a href="https://github.com/AkshayVarma99/WhatsApp-Chat-Analysis-with-Streamlit" title="More Details"><i class="bi bi-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-python">
+                <div class="portfolio-wrap">
+                    <img src="assets/img/Geospatial Analysis of Urban Air Quality in Major English Cities.png" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>Geospatial Analysis</h4>
+                        <p>Python</p>
+                        <div class="portfolio-links">
+                            <a href="assets/img/Geospatial Analysis of Urban Air Quality in Major English Cities.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Geospatial Analysis of Urban Air Quality"><i class="bi bi-plus"></i></a>
+                            <a href="https://github.com/AkshayVarma99/Air-Quality-Analysis-Of-English-Cities-Using-Geospatial-Tools" title="More Details"><i class="bi bi-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-python">
+                <div class="portfolio-wrap">
+                    <img src="assets/img/Coffee Sales Dashboard.png" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>Coffee Shop Sales Analysis</h4>
+                        <p>Pandas & Streamlit</p>
+                        <div class="portfolio-links">
+                            <a href="assets/img/Coffee Sales Dashboard.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Coffee Shop Sales Analysis"><i class="bi bi-plus"></i></a>
+                            <a href="https://github.com/AkshayVarma99/Coffee-Shop-Sales-Analysis" title="More Details"><i class="bi bi-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                <div class="portfolio-wrap">
+                    <img src="assets/img/Theater Booking System.png" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>Theatre Booking System</h4>
+                        <p>MERN Stack</p>
+                        <div class="portfolio-links">
+                            <a href="assets/img/Theater Booking System.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Theatre Booking System (MERN Stack)"><i class="bi bi-plus"></i></a>
+                            <a href="https://github.com/AkshayVarma99/Theatre-Booking-System-Admin-Portal-" title="More Details"><i class="bi bi-link"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
+    </div>
+</section>
+        </div>
     </section><!-- /Skills Section -->
 
     <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section">
-
-        <div class="container">
-            <!-- Section Title -->
-            <div class="container section-title" data-aos="fade-up">
-                <span class="description-title">Portfolio</span>
-                <h2>Portfolio</h2>
-                <p>Here are Data Analytics projects utilizing Python, SQL, Excel, and Power BI.</p>
-            </div><!-- End Section Title -->
-
-
-            <div class="row d-flex justify-content-center">
-                <div class="col-md-4 d-flex ftco-animate">
-                    <div class="blog-entry justify-content-end">
-                        <a class="block-20" href="https://github.com/AkshayVarma99/PowerBI-Sales-Dashboard">
-                            <img src="assets/img/Sales Dashboard.png" class="img-fluid" alt="">
-                        </a>
-                        <div class="text mt-3 float-right d-block">
-                            <div class="d-flex align-items-center mb-3 meta">
-                                <p class="mb-0">
-                                    <!--<span class="mr-2">September 23, 2024</span>-->
-                                </p>
-                            </div>
-                            <h3 class="heading"><a href="https://github.com/AkshayVarma99/PowerBI-Sales-Dashboard">Sales Performance Dashboard</a></h3>
-                            <p>Built a Sales Dashboard in Power BI using Power Query for data transformation. 
-                                The dashboard visualizes key sales metrics, empowering stakeholders to make informed, data-driven decisions.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 d-flex ftco-animate">
-                    <div class="blog-entry">
-                        <a class="block-20" href="https://github.com/AkshayVarma99/T20-Cricket-World-Cup-2022-Data-Analysis">
-                            <img src="assets/img/ICC T20 World Cup Image.png" class="img-fluid" alt="">
-                        </a>
-                        <div class="text mt-3 float-right d-block">
-                            <div class="d-flex align-items-center mb-3 meta">
-                                <p class="mb-0">
-                                    <!--<span class="mr-2">September 01, 2024</span>-->
-                                </p>
-                            </div>
-                            <h3 class="heading"><a href="https://github.com/AkshayVarma99/T20-Cricket-World-Cup-2022-Data-Analysis">ICC T20 World Cup 2022 - Player Performance Dashboard</a></h3>
-                            <p>Developed a Power BI dashboard to analyze player performance in the ICC Men’s T20 World Cup 2022. Collected data via web scraping (Python, BeautifulSoup), transformed using Pandas and 
-                                Power Query, and visualized key metrics (runs, strike rate, wickets) to generate insights and facilitate the selection of the Best 11 players.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 d-flex ftco-animate">
-                    <div class="blog-entry justify-content-end">
-                        <a class="block-20" href="https://github.com/AkshayVarma99/WhatsApp-Chat-Analysis-with-Streamlit">
-                            <img src="assets/img/WhatApp Chat Analysiss.png" class="img-fluid" alt="">
-                        </a>
-                        <div class="text mt-3 float-right d-block">
-                            <div class="d-flex align-items-center mb-3 meta">
-                                <p class="mb-0">
-                                    <!--<span class="mr-2">Nov 06, 2024</span>-->
-                                </p>
-                            </div>
-                            <h3 class="heading"><a href="https://github.com/AkshayVarma99/WhatsApp-Chat-Analysis-with-Streamlit">WhatsApp Chat Data Analysis</a></h3>
-                            <p>Developed a Python-based Streamlit app for analyzing WhatsApp chat data, offering insights on message count, user activity, and word frequency. The app processes .txt files and visualizes key metrics. 
-                                Built using PyCharm, Streamlit, and Python for efficient data processing and interactive visualizations..
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 d-flex ftco-animate">
-                    <div class="blog-entry">
-                        <a class="block-20" href="https://github.com/AkshayVarma99/Air-Quality-Analysis-Of-English-Cities-Using-Geospatial-Tools">
-                            <img src="assets/img/Geospatial Analysis of Urban Air Quality in Major English Cities.png" class="img-fluid" alt="">
-                        </a>
-                        <div class="text mt-3 float-right d-block">
-                            <div class="d-flex align-items-center mb-3 meta">
-                                <p class="mb-0">
-                                    <!--<span class="mr-2">April 25, 2023</span>-->
-                                </p>
-                            </div>
-                            <h3 class="heading"><a href="https://github.com/AkshayVarma99/Air-Quality-Analysis-Of-English-Cities-Using-Geospatial-Tools">Geospatial Analysis of Urban Air Quality in Major English Cities</a></h3>
-                            <p>This project uses Python, GeoPandas, Matplotlib, Folium, and Scikit-learn to analyze air quality in major English cities, identifying pollution hotspots and trends in CO levels. 
-                                The insights support urban planning and policy decisions.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 d-flex ftco-animate">
-                    <div class="blog-entry">
-                        <a class="block-20" href="https://github.com/AkshayVarma99/Coffee-Shop-Sales-Analysis">
-                            <img src="assets/img/Coffee Sales Dashboard.png" class="img-fluid" alt="">
-                        </a>
-                        <div class="text mt-3 float-right d-block">
-                            <div class="d-flex align-items-center mb-3 meta">
-                                <p class="mb-0">
-                                    <!--<span class="mr-2">October 19, 2024</span>-->
-                                </p>
-                            </div>
-                            <h3 class="heading"><a href="https://github.com/AkshayVarma99/Coffee-Shop-Sales-Analysis">Coffee Shop Sales Analysis</a></h3>
-                            <p>Comprehensive analysis of coffee shop sales utilizing Pandas for data cleaning and exploratory data analysis (EDA), complemented by Streamlit for creating interactive data visualization dashboards.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 d-flex ftco-animate">
-                    <div class="blog-entry justify-content-end">
-                        <a class="block-20" href="https://github.com/AkshayVarma99/Theatre-Booking-System-Admin-Portal-">
-                            <img src="assets/img/Theater Booking System.png" class="img-fluid" alt="">
-                        </a>
-                        <div class="text mt-3 float-right d-block">
-                            <div class="d-flex align-items-center mb-3 meta">
-                                <p class="mb-0">
-                                    <!--<span class="mr-2">November 08, 2024</span>-->
-                                </p>
-                            </div>
-                            <h3 class="heading"><a href="https://github.com/AkshayVarma99/Theatre-Booking-System-Admin-Portal-">Theatre Booking System (MERN Stack)</a></h3>
-                            <p>Developed a web application using the MERN stack (MongoDB, Express.js, React.js, Node.js) for theatre administrators to efficiently manage entertainment shows. 
-                                Key features include show creation, editing, publishing, secure user authentication with JWT, and functionalities for draft publishing and edit locking, ensuring smooth and efficient theatre operations.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section><!-- /Portfolio Section -->
+    
 
     <!-- More Section -->
     <section id="more" class="hero section dark-background">
@@ -485,46 +487,70 @@ With a Master’s in Data Science and Analytics, I am proficient in Python, SQL,
 
     <!-- Contact Section -->
     <section id="contact" class="contact section">
-
-        <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
             <span class="description-title">Contact</span>
             <h2>Contact</h2>
-            <p>Below are the details to reach out to me!</p>
-        </div><!-- End Section Title -->
-
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="row gy-4" data-aos="fade-up" data-aos-delay="200">
-
-                <div class="col-lg-4">
-                    <div class="info-item d-flex flex-column justify-content-center align-items-center">
-                        <i class="bi bi-geo-alt"></i>
-                        <h3>Address</h3>
-                        <p>Maynooth, Ireland</p>
-                    </div>
-                </div><!-- End Info Item -->
-
-                <div class="col-lg-4">
-                    <div class="info-item d-flex flex-column justify-content-center align-items-center info-item-borders">
-                        <i class="bi bi-telephone"></i>
-                        <h3>Call</h3>
-                        <p>+353-899658692</p>
-                    </div>
-                </div><!-- End Info Item -->
-
-                <div class="col-lg-4">
-                    <div class="info-item d-flex flex-column justify-content-center align-items-center">
-                        <i class="bi bi-envelope"></i>
-                        <h3>Email</h3>
-                        <p>akshayvarmav2@gmail.com</p>
-                    </div>
-                </div><!-- End Info Item -->
-
-            </div>
-
+            <p>Let's connect and discuss how I can contribute to your data analytics needs!</p>
         </div>
-
+    
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+            <div class="row gy-4">
+                <div class="col-lg-6">
+                    <div class="contact-info">
+                        <div class="info-item" data-aos="fade-up" data-aos-delay="100">
+                            <i class="bi bi-geo-alt-fill"></i>
+                            <div>
+                                <h4>Location:</h4>
+                                <p>Dublin, Ireland</p>
+                            </div>
+                        </div>
+    
+                        <div class="info-item" data-aos="fade-up" data-aos-delay="200">
+                            <i class="bi bi-envelope-fill"></i>
+                            <div>
+                                <h4>Email:</h4>
+                                <p>akshayvarmav2@gmail.com</p>
+                            </div>
+                        </div>
+    
+                        <div class="info-item" data-aos="fade-up" data-aos-delay="300">
+                            <i class="bi bi-phone-fill"></i>
+                            <div>
+                                <h4>Phone:</h4>
+                                <p>+353-899658692</p>
+                            </div>
+                        </div>
+    
+                        <div class="social-links mt-4" data-aos="fade-up" data-aos-delay="400">
+                            <a href="https://www.linkedin.com/in/akshayvarma04/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                            <a href="https://github.com/AkshayVarma99" class="github"><i class="bi bi-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-6">
+                    <form action="forms/contact.php" method="post" class="contact-form" data-aos="fade-up" data-aos-delay="200">
+                        <div class="row gy-3">
+                            <div class="col-md-6">
+                                <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                            </div>
+                            <div class="col-md-12">
+                                <input type="text" class="form-control" name="subject" placeholder="Subject" required>
+                            </div>
+                            <div class="col-md-12">
+                                <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
+                            </div>
+                            <div class="col-md-12 text-center">
+                                <button type="submit" class="btn btn-primary">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </section><!-- /Contact Section -->
 </main>
 
